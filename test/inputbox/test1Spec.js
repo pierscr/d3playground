@@ -1,5 +1,5 @@
-console.log("filespec");
 define(['app'],function(test){
-  console.log("testinside");
-  test.app();
+  describe('first test',function(){
+      test.greatings('test started');
+  })
 });

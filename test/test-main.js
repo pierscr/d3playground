@@ -1,5 +1,4 @@
 
-console.log('testmain.js');
 var tests = [];
 for (var file in window.__karma__.files) {
   if (window.__karma__.files.hasOwnProperty(file)) {
@@ -12,17 +11,6 @@ for (var file in window.__karma__.files) {
 requirejs.config({
     // Karma serves files from '/base'
     baseUrl: '/base/js',
-
-    paths: {
-        'jquery': '../lib/jquery',
-        'underscore': '../lib/underscore',
-    },
-
-    shim: {
-        'underscore': {
-            exports: '_'
-        }
-    },
 
     // ask Require.js to load these files (all our tests)
     deps: tests,

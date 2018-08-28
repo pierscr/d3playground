@@ -1,10 +1,10 @@
-console.log("appfile");
-define(function(){
-  console.log("require app");
-  function app(){
-    console.log("dentro la funzione app");
+define('app',[],function(){
+
+  var fn= function(test){
+    console.log(test);
   }
+
   return {
-    app:app
+    greatings:fn
   }
 });
